@@ -20,11 +20,11 @@ def upload_video():
 
 
 # Code for Project 265 Grayscale start here
-   source = cv2.VideoCapture('static/' , filename)
-   frame_width = int(source.get(3))
-   frame_height = int(source.get(4))
-   size = (frame_width, frame_height)
-   result = cv2.VideoWriter('static/' + blackandwhite.mp4, 
+    source = cv2.VideoCapture('static/' , filename)
+    frame_width = int(source.get(3))
+    frame_height = int(source.get(4))
+    size = (frame_width, frame_height)
+    result = cv2.VideoWriter('static/' + blackandwhite.mp4, 
                             cv2.VideoWriter.fourcc('mp4v'), 
                             30, size, 0)
 
