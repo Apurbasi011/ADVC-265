@@ -28,12 +28,14 @@ def upload_video():
                             cv2.VideoWriter.fourcc('mp4v'), 
                             30, size, 0)
 
-   try:
-        while True:
-            status, frame_image = source.read()
-            gray = cv2.cvtColor(frame_image, cv2.COLOR.BGR2GRAY)
-            result.write(gray)
-            video_file = 'blackandwhite.mp4'
+        try:
+            while True:
+                
+                status, frame_image = source.read()
+                gray = cv2.cvtColor(frame_image, cv2.COLOR.BGR2GRAY)
+                result.write(gray)
+                video_file = 'blackandwhite.mp4'
+
 
     except:
         print('Completed Reading All The Frames From The Video')
